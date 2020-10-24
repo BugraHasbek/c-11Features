@@ -1,10 +1,13 @@
 #include <string>
+#include <vector>
 #include <iostream>
 using namespace std;
 
 class Printer{
 public:
-    string getName() { return "getName_bugra"; }
-    void printString(const string & s);
+    void printString(string & s);
     void printString(string&& s);
+
+private:
+    vector<string> printedStrings;
 };
