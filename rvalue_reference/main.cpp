@@ -10,6 +10,7 @@ int main()
     string name = "bugra";
 
     printer.printString(name);
+    printer.printString(printer.getName());
     printer.printString("temp_bugra");
 
     return 0;
